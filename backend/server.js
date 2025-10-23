@@ -1,7 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
-require('dotenv').config({ path: './backend/.env' });
+require('dotenv').config();
 
 const app = express();
 const port = 3001;
@@ -57,4 +57,5 @@ app.post('/moods', async (req, res) => {
 
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
+
 });
